@@ -148,7 +148,7 @@ plt.show()
 验证 `terminal` 可使用 GUI：在 VSCode Terminal 中输入 `xclock`，出现时钟则安装成功。
 
 ### 四、Git版本管理
-https://user-images.githubusercontent.com/141089/95768381-88955000-0cb6-11eb-958c-88c1107c1c46.gif
+![alt text](images/95768381-88955000-0cb6-11eb-958c-88c1107c1c46.gif)
 
 ### 参考
 https://blog.csdn.net/qq_31347869/article/details/121672295
