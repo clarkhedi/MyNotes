@@ -12,6 +12,7 @@
   * [Step2：配置本地VSCode](#step2-----vscode)
   * [Step3：设置服务器环境变量](#step3----------)
   * [Step4：验证是否能够正常使用图形化界面](#step4----------------)
+- [四、Git版本管理](#------)
 - [参考](#--)
 
 ### 一、准备工作
@@ -146,9 +147,14 @@ plt.show()
 ```
 验证 `terminal` 可使用 GUI：在 VSCode Terminal 中输入 `xclock`，出现时钟则安装成功。
 
+### 四、Git版本管理
+https://user-images.githubusercontent.com/141089/95768381-88955000-0cb6-11eb-958c-88c1107c1c46.gif
+
 ### 参考
 https://blog.csdn.net/qq_31347869/article/details/121672295
 
 https://zhuanlan.zhihu.com/p/141205262
 
 https://blog.csdn.net/zk0272/article/details/96866513
+
+https://github.com/microsoft/vscode/issues/108444
