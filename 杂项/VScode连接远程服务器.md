@@ -100,18 +100,30 @@ Host 机器名称2，可以任意
 ```
 
 ##### 让代码在vscode关闭后也在服务器后台运行
-在终端窗口中运行你的训练代码，并在命令前加上`nohup`，命令后加上`&`，例如：
-```bash
-nohup python train.py &
+介绍一种常用的工具： `screen`，该工具允许你在远程服务器上创建持久会话，即使你断开连接，这些会话也会继续运行。
+
+1、安装 `screen`
+```sh
+sudo apt-get install screen  # 对于 Debian/Ubuntu 系统
+sudo yum install screen      # 对于 CentOS 系统
 ``` 
-这样就可以让训练代码在后台运行，即使关闭了VScode也不会停止。另外，可以使用如下命令来查看后台运行的进程：
-```bash
-ps -ef | grep python
-```
-或者使用如下命令来查看**输出日志**：
-```bash
-tail -f nohup.out
-```
+2、创建一个新 `screen` 会话
+```sh
+screen -S mysession
+``` 
+3、在 `screen` 会话中运行你的代码
+```sh
+python myscript.py
+``` 
+4、按 `Ctrl+A` 然后按 `D` 键将 `screen `会话分离，但继续在后台运行
+```sh
+Ctrl+A D
+``` 
+5、重新连接到 `screen` 会话
+```sh
+screen -r mysession
+``` 
+
 
 ### 三、远程调试使用图形化界面（GUI）
 #### Step1：下载安装 [Xming](http://www.straightrunning.com/XmingNotes/)
