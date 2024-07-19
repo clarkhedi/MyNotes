@@ -126,7 +126,7 @@ screen -r mysession
 
 
 ### 三、远程调试使用图形化界面（GUI）
-#### Step1：下载安装 [Xming](http://www.straightrunning.com/XmingNotes/)
+#### Step1：下载安装 [Xming](https://sourceforge.net/projects/xming/)
 安装 Xming 自定义安装路径，其余选项默认就行，打开XLaunch，记住Display number（这里显示为0），一直点下一页直至完成。
 
 打开Xming安装目录，打开`X0.hosts`（这个0就是上面的Display number），在localhost下面添加远程服务器的IP地址。	
