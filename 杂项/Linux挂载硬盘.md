@@ -87,3 +87,9 @@ sudo shutdown -r now 或者 sudo reboot
 ```
 
 重启之后输入 mount 查看磁盘信息, 以及输入 df -l 查看分区情况。
+
+
+## 参考
+
+1. https://blog.csdn.net/tingzuhuitou/article/details/105492317
+2. https://blog.csdn.net/bill_wjn/article/details/106013425
