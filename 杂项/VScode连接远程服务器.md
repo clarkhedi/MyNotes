@@ -134,6 +134,11 @@ screen -r mysession
 #### Step2：配置本地VSCode
 本地VSCode安装 `Remote-SSH` 和 `Remote X11` 插件
 
+并且配置私钥与公钥：
+```
+ssh-keygen -t rsa -C "邮箱名"
+```
+
 打开`config`，给之前添加的服务器配置加上下面三句代码：
 ```
 ForwardX11 yes
